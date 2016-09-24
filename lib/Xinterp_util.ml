@@ -34,7 +34,8 @@ type exp =
   | GetField of exp * string
   | MkArray of exp * exp
   | GetArray of exp * exp
-  | SetArray of exp * exp * exp 
+  | SetArray of exp * exp * exp
+  | Ref of int 
   [@@deriving show]
 
 module Parser = struct

@@ -37,6 +37,7 @@ type exp =
   | MkArray of exp * exp
   | GetArray of exp * exp
   | SetArray of exp * exp * exp
+  | Ref of int
   [@@deriving show]
 
 val from_string : string -> exp
